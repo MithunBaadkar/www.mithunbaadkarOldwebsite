@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 300px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 5px 13px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.761);
+    
+}
+
+.name{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+}
+
+.name h1{
+    font-size: 85px;
+    
+}
+
+.name p{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.vid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.navbar{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+/*second section start*/
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(58, 18, 0);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wellcome{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.span1{
+    font-size: 130px;
+}
+
+.rotate{
+    width: 30rem;
+    height: 30rem;
+    animation: rotation 15s infinite linear ;
+    
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(356deg);
+    }
+}
+/*second section end*/
+
+@media (min-aspect-ratio: 16/9){
+    .vid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .vid{
+        width: auto;
+        height: 100%;
+    }
+}
+
+                            /* RESPONSIVE CODE */
+
+/* Large Tablets view*/
+@media (max-width: 972px){
+    nav ul li{
+        display: block;
+        padding-top: 45px;
+    }
+
+    nav{
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        border: none;
+        padding: 5px 13px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    
+
+    .nav-links{
+        position: fixed;
+        top: 0;
+        width: 250px;
+        right: -250px;
+        height: 100vh;
+        backdrop-filter: blur(18px);
+        border-radius: 2px 2px 0 0;
+        z-index: 800;
+        transition: 1s;
+    }
+
+    .close{
+        margin-top: 20px;
+        display: block;
+        width: 50px;
+        z-index: 800;
+    }
+
+    .navbar{
+        display: block;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        z-index: 799;
+    }
+
+    .name h1{
+        font-size: 70px;
+        
+    }
+
+    .name p{
+        font-size: 23px;
+        font-weight: 500;
+    }
+    
+    .sec1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wellcome{
+        color: white;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+/* small Tablet view */
+@media (max-width: 600px){
+   nav .logo{
+        width: 200px;
+    }
+   
+    .wellcome{
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+        
+    }
+    .span1{
+        font-size: 86px;
+    }
+
+}
+/* Mobile view */
+@media (max-width: 480px){
+     
+    .name h1{
+        font-size: 60px;
+        
+    }
+    .name p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    
+    .wellcome{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 7px;
+    }
+    .span1{
+        font-size: 56px;
+    }
+
+    .rotate{
+        
+        width: 18rem;
+        height: 18rem;    
+    }
+}
