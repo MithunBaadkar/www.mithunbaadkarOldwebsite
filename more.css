@@ -1,181 +1,99 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
-.div1{
+.container{
     width: 100%;
     height: 100vh;
-    text-align: center;
-}
-
-
-/*.container{
-    
-}*/
-
-.linkitems{
+    background-color: #242424;
     display: flex;
-    flex-wrap: wrap;
+    padding: 10px 10px;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 10px;
 }
 
-
-
-.Pythonimg{
-    width: 200px;
+.H1{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
 }
-.Pycharmimg{
-    width: 117px;
-}
-
-.item1{
-    width: 250px;
-    height: 250px;
-    flex-grow: 1;
+.box1{
+    background-color: #303030;
+    width: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed rgb(130, 130, 130);
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: 2px solid #616161;
 }
-.Python{
-    font-size: 40px;
-    font-weight: 600;
+
+.box1items{
+    padding: 10px 10px;
 }
-.Pythonbtn{
-    background: rgb(55 113 161);
-    background: linear-gradient(90deg, rgb(55 113 161) 0%, rgb(255 210 66)100%);;
+.atag1{
     color: white;
+    font-size: 20px;
+    font-weight: 400;
     text-decoration: none;
-    padding: 4px 14px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 3px;
 }
-.Pythonbtn:hover{
-    padding: 5px 15px;
-}
-.item2{
-    width: 250px;
-    height: 250px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed rgb(130, 130, 130);
-}
-.Pycharm{
-    font-size: 40px;
-    font-weight: 600; 
-}
-.Pycharmbtn{
-    background: rgb(33 215 137);
-    background: linear-gradient(90deg, rgb(33 215 137) 0%, rgba(241,255,0,1) 100%);;
+.btn1{
     color: white;
+    background-color: #646464;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 2px solid #bfbfbf;
+   
+}
+.btn1:hover{
+    border: 2px solid #00fffb;
+}
+
+.box2{
+    background-color: #303030;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: 2px solid #616161;
+}
+.implinksbtn{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
     text-decoration: none;
-    padding: 4px 14px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 3px; 
 }
-.Pycharmbtn:hover{
-    padding: 5px 15px;
+.linkbtn1{
+    background-color: #646464;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 2px solid #bfbfbf;
+    margin-bottom: 10px;
 }
-
-.item3{
-    width: 250px;
-    height: 250px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed rgb(130, 130, 130);
-}
-.javaimg{
-    width: 112px;
-}
-.java{
-    font-size: 40px;
-    font-weight: 600; 
-}
-.javabtn{
-    background: rgb(255,0,0);
-    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,18,255,1) 100%);
-    color: white;
-    text-decoration: none;
-    padding: 4px 14px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 3px; 
-}
-.javabtn:hover{
-    padding: 5px 15px; 
-}
-
-.item4{
-    width: 250px;
-    height: 250px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed rgb(130, 130, 130);
-}
-.Sqlimg{
-    width: 130px;
-}
-.sql{
-    font-size: 40px;
-    font-weight: 600; 
-}
-.sqlbtn{
-    background: rgb(14,255,0);
-    background: linear-gradient(90deg, rgba(14,255,0,1) 0%, rgba(0,18,255,1) 100%);
-    color: white;
-    text-decoration: none;
-    padding: 4px 14px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 3px; 
-}
-.sqlbtn:hover{
-    padding: 5px 15px; 
+.linkbtn1:hover{
+    border: 2px solid #8fff2e;
 }
 
 
-.footer{
-    background: rgb(70,16,0);
-background: linear-gradient(90deg, rgba(70,16,0,1) 0%, rgb(180, 42, 0) 100%);
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.mithname{
-    font-weight: 600;
-}
-
-@media (max-width: 600px){
-    .div1{
+@media (max-width: 972px){
+    .container{
+        flex-direction: column;
+    }
+    .box1{
+        background-color: #303030;
         width: auto;
         height: auto;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
-    
+    .box2{
+        background-color: #303030;
+        width: auto;
+        height: auto;
+    }
 }
-
