@@ -6,13 +6,14 @@
     
 }
 
-main{
+.main{
     width: 100%;
     height: 100vh;
     display: flex;
-    gap: 40px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
 }
 
 .font1{
@@ -21,62 +22,91 @@ main{
 }
 .font2{
     font-size: 7rem;
+    color: white;
 }
 .font3{
     font-size: 4.5rem;
+    color: white;
+}
+.div1{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div2{
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.div2{
-    position: relative;
-}
-.fly1{
-    position: absolute;
-    top: -15px;
-    left: -20px;
-    background-color: rgb(255, 255, 255);
-    width: 170px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 2px solid rgb(108 111 126);
-    cursor: pointer;
-}
-.fly1font{
-    font-size: 20px;
-    font-weight: 500;
-}
-.fly2{
-    position: absolute;
-    top: 220px;
-    right: 72px;
-}
-.instaimg{
-    width: 50px;
-}
-.fly3{
-    position: absolute;
-    right: 32px;
-    bottom: 7px;
-}
-.facebookimg{
-    width: 40px;
-}
-.fly4{
-    position: absolute;
-    right: -16px;
-    bottom: 29px;
-}
-.youtubeimg{
-    width: 50px;
-}
 .dp{
-    width: 250px;
+    width: 130px;
     border-radius: 50rem;
     border: 2px solid rgb(108 111 126);
     box-shadow: 0px 0px 20px 0px rgb(113, 116, 134);
+    position: absolute;
+    z-index: 10;
 }
+.ring1{
+    position: absolute;
+    width: 460px;
+    z-index: 4;
+    animation: rotation 5s infinite;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.ring2{
+    position: absolute;
+    width: 460px;
+    z-index: 3;
+    animation: rotation1 5s infinite;
+}
+@keyframes rotation1{
+    from{
+        transform: rotate(-0deg);
+    }
+    to{
+        transform: rotate(-359deg);
+    }
+}
+.ring3{
+    position: absolute;
+    width: 460px;
+    z-index: 2;
+    animation: rotation2 5s infinite;
+}
+@keyframes rotation2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.ring4{
+    position: absolute;
+    width: 460px;
+    z-index: 1;
+    animation: rotation3 5s infinite;
+}
+@keyframes rotation3{
+    from{
+        transform: rotate(-0deg);
+    }
+    to{
+        transform: rotate(-359deg);
+    }
+}
+
 
 
 
@@ -85,7 +115,7 @@ main{
 }
 
 @media (max-width: 600px){
-    main{
+    .main{
         flex-direction: column;
     }
     .font1{
@@ -96,6 +126,30 @@ main{
     }
     .font3{
         font-size: 3rem;
+    }
+
+    .dp{
+        width: 100px;
+    }
+    .ring1{
+        position: absolute;
+        width: 370px;
+        z-index: 4;
+    }
+    .ring2{
+        position: absolute;
+        width: 370px;
+        z-index: 3;
+    }
+    .ring3{
+        position: absolute;
+        width: 370px;
+        z-index: 2;
+    }
+    .ring4{
+        position: absolute;
+        width: 370px;
+        z-index: 1;
     }
 }
 
@@ -109,5 +163,29 @@ main{
     }
     .font3{
         font-size: 2.6rem;
+    }
+    
+    .dp{
+        width: 100px;
+    }
+    .ring1{
+        position: absolute;
+        width: 370px;
+        z-index: 4;
+    }
+    .ring2{
+        position: absolute;
+        width: 370px;
+        z-index: 3;
+    }
+    .ring3{
+        position: absolute;
+        width: 370px;
+        z-index: 2;
+    }
+    .ring4{
+        position: absolute;
+        width: 370px;
+        z-index: 1;
     }
 }
