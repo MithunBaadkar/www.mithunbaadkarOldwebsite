@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main{
+    margin: 10px 20px;
+}
+.mainpage{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.herocontainer{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 17rem;
+}
+.menu{
+    font-family: 'Zen Dots';
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.hero{
+    width: 100%;
+    height: 87vh;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vid1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .vid1{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .vid1{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.namebox{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    margin: 0 10px;
+    cursor: pointer;
+}
+.hname{
+    font-size: 85px;
+}
+.pname{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    right: -350px;
+    z-index: 10;
+    background-color: white;
+    height: 100%;
+    padding: 2px 30px;
+    transition: 1s;
+}
+.navdiv{
+    padding: 10px 15px;
+}
+.close{
+    width: 60px;
+    cursor: pointer;
+}
+.navbarclosecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbarmenu{
+    flex: 1;
+    text-align: center;
+    font-family: 'Zen Dots';
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.Imgs{
+    width: 4rem;
+}
+.homediv{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 15px;
+    border-bottom: 2px solid rgb(178, 178, 178);
+}
+.aboutdiv{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 15px;
+    border-bottom: 2px solid rgb(178, 178, 178);
+}
+.projectdiv{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 15px;
+    border-bottom: 2px solid rgb(178, 178, 178);
+}
+.morediv{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 15px;
+    border-bottom: 2px solid rgb(178, 178, 178);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Zen Dots';
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .hname{
+        font-size: 50px;
+    }
+    .pname{
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px){
+    .logo{
+        width: 13rem;
+    }
+    .hname{
+        font-size: 40px;
+    }
+    .pname{
+        font-size: 20px;
+    }
+}
